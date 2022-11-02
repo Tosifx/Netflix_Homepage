@@ -1,0 +1,159 @@
+*{
+    padding:0;
+    margin:0;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 70px;
+    padding:5px 30px;
+
+}
+.logo{
+    background-image: url('netlogo.png');
+    background-size:cover;
+    width: 140px;
+    height: 40px;
+    object-fit: cover;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.language{
+    width: 90px;
+    height: 25px;
+    background-color:black;
+    font-size: 15px;
+    padding:5px;
+    border:1px solid white;
+}
+.signin{
+    width: 80px;
+    height: 35px;
+    background-color:red;
+    font-size: 18px;
+}
+.language,.signin{
+    margin:0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.language select{
+    background-color:black;
+    border:none;
+    outline:none;
+    color:white;
+    font-size: 17px;
+}
+/******background image*********/
+.topheading{
+    background-image: url('nt.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    box-shadow: inset -250px -250px 1000px rgba(0,0,0,0.6),
+    inset 250px 250px 1000px rgba(0,0,0,0.6);
+    
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+.heading h1{
+    font-size: 55px;
+    max-width: 640px;
+    color:white;
+    text-align: center;
+}
+.heading h3{
+    font-size: 35px;
+    color:white;
+    margin:20px 0px;
+}
+.heading h4{
+    font-size: 20px;
+    color:white;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:15px 0px;
+
+}
+#inputsearch{
+    width:475px;
+    height: 50px;
+    padding:5px 20px;
+    font-size: 18px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.search button{
+    width: 180px;
+    height: 60px;
+    background-color:red;
+    border:none;
+    font-size: 25px;
+    color:white;
+    padding:0px 6px;
+}
+#inputbox ::placeholder{
+    font-size: 15px;
+}
+#email{
+    color:#4f4f4f;
+    
+}
+#inputbox{
+   display: none;
+    outline:None;
+    border:none;
+    font-size: 18px;
+}
+
+/********Response *****************/
+@media screen and (max-width:600px) {
+    .heading h1{
+        font-size: 30px;
+        width: 450px;
+    }
+    .heading h3{
+        font-size: 25px;
+        width: 400px;
+    }
+    .heading h4{
+        font-size: 18px;
+        text-align: center;
+        width: 350px;
+    }
+
+    .search{
+        flex-direction:column;
+        align-items: center;
+    }
+
+    #inputsearch{
+        width: 375px;
+        height: 40px;
+    }
+
+    .search button{
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+}
